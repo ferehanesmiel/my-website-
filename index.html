@@ -12,6 +12,7 @@
             font-family: 'Inter', sans-serif;
             background-color: #F7F7F7;
             color: #0F0C09;
+            margin: 0;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Poppins', sans-serif;
@@ -26,20 +27,27 @@
             background: #B3A49C;
             border-radius: 10px;
         }
+        #root {
+            min-height: 100vh;
+        }
     </style>
 <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "recharts": "https://esm.sh/recharts@^3.7.0"
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
+    "recharts": "https://esm.sh/recharts@2.13.3"
   }
 }
 </script>
 </head>
 <body class="bg-[#F7F7F7] text-[#0F0C09]">
     <div id="root"></div>
+    <!-- Explicitly load the entry point module -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
